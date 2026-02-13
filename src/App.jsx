@@ -5,6 +5,7 @@ import Hero from "./components/Hero.jsx";
 import Coffee from "./components/Coffee.jsx";
 import About from "./components/About.jsx";
 import Art from "./components/Art.jsx";
+import Menu from "./components/Menu.jsx";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
             <Coffee />
             <About />
             <Art />
+            <Menu />
         </main>
     )
 }

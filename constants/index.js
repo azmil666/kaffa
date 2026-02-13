@@ -138,7 +138,7 @@ const sliderLists = [
     {
         id: 1,
         name: "Signature Espresso",
-        image: "/images/drink1.png",
+        image: "/images2/espresso3.png",
         title: "Pure. Bold. Energizing.",
         description:
             "Our signature espresso is crafted from premium roasted beans, delivering a deep aroma and strong, smooth taste in every shot.",
@@ -146,7 +146,7 @@ const sliderLists = [
     {
         id: 2,
         name: "Caramel Latte",
-        image: "/images/drink2.png",
+        image: "/images2/cup2.png",
         title: "Sweet Comfort in Every Sip",
         description:
             "A perfect blend of rich espresso, steamed milk, and smooth caramel. Warm, creamy, and irresistibly satisfying.",
@@ -154,7 +154,7 @@ const sliderLists = [
     {
         id: 3,
         name: "Cold Brew Reserve",
-        image: "/images/drink3.png",
+        image: "/images2/coldb.png",
         title: "Slow Brewed, Smooth Taste",
         description:
             "Steeped for hours to unlock deep flavors and natural sweetness. A refreshing and bold coffee experience.",
@@ -162,7 +162,7 @@ const sliderLists = [
     {
         id: 4,
         name: "Mocha Delight",
-        image: "/images/drink4.png",
+        image: "/images2/mocha.png",
         title: "Chocolate Meets Coffee",
         description:
             "A luxurious blend of cocoa, espresso, and steamed milk — crafted for those who love a rich and indulgent treat.",

@@ -56,8 +56,7 @@ const Hero = () => {
         });
 
         videoRef.current.onloadedmetadata = () => {
-            videoRef.current.currentTime = 0.1;
-
+            videoRef.current.currentTime = 0;
             tl.fromTo(
                 videoRef.current,
                 { currentTime: 0 },
@@ -90,7 +89,7 @@ const Hero = () => {
 
             </section>
             <div className="video absolute inset-0 ">
-                <video ref={videoRef} src="/videos2/output.mp4" muted playsInline preload="auto" autoPlay/>
+                <video ref={videoRef} src="/videos2/output.mp4" muted playsInline preload="auto"/>
             </div>
         </>
     )

@@ -49,9 +49,10 @@ const Hero = () => {
             scrollTrigger: {
                 trigger: videoRef.current,
                 start: startValue,
-                end: "+=220%",
+                end: "top top",
                 scrub: true,
                 pin: true,
+                endTrigger: "#coffee",
             },
         });
 
@@ -75,6 +76,12 @@ const Hero = () => {
                     <div className="content">
                         <div className="space-y-5 hidden md:block">
                             <p>Cool. Aromatic. Classy.</p>
+                            <img
+                                src="/images2/mobile-coffee.png"
+                                alt="coffee"
+                                className="block md:hidden mx-auto mt-10 w-64"
+                            />
+
                             <p className="subtitle">
                                 Sip the spirit <br/>of Kaffa
                             </p>

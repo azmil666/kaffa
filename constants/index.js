@@ -73,16 +73,16 @@ const mockLists = [
 
 const profileLists = [
     {
-        imgPath: "/images/profile1.png",
+        imgPath: "/images2/profile1.png",
     },
     {
-        imgPath: "/images/profile2.png",
+        imgPath: "/images2/profile2.png",
     },
     {
-        imgPath: "/images/profile3.png",
+        imgPath: "/images2/profile3.png",
     },
     {
-        imgPath: "/images/profile4.png",
+        imgPath: "/images2/profile4.png",
     },
 ];
 
@@ -119,17 +119,17 @@ const openingHours = [
 const socials = [
     {
         name: "Instagram",
-        icon: "/images/insta.png",
+        icon: "/images2/insta.png",
         url: "#",
     },
     {
         name: "X (Twitter)",
-        icon: "/images/x.png",
+        icon: "/images2/x.png",
         url: "#",
     },
     {
         name: "Facebook",
-        icon: "/images/fb.png",
+        icon: "/images2/fb.png",
         url: "#",
     },
 ];

@@ -37,8 +37,8 @@ const Contact = () => {
 
     return (
         <footer id="contact">
-            <img src="/images/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
-            <img src="/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
+            <img src="/images2/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
+            <img src="/images2/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
 
             <div className="content">
                 <h2 className="contact-title text-5xl md:text-7xl 2xl:text-8xl font-modern-negra">

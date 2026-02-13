@@ -8,8 +8,8 @@
 }
 
 @theme {
-    --color-yellow: #e7d393;
-    --color-white-100: #efefef;
+    --color-yellow: #c69c6d;
+    --color-white-100: #f5e6d3;
     --font-sans: "Mona Sans", sans-serif;
     --font-modern-negra: "Modern Negra", sans-serif;
     --font-serif: "DM Serif Text", serif;
@@ -19,7 +19,7 @@ html,
 body {
     width: 100%;
     background-color: black;
-    color: white;
+    color: #f5e6d3;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -37,7 +37,13 @@ body {
 }
 
 @utility text-gradient {
-    background: linear-gradient(to bottom, #ffffff, #898989);
+    background: linear-gradient(
+            to bottom,
+            #fff3e0,
+            #d7a86e,
+            #8b5e3c,
+            #3b2a1f
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -46,8 +52,8 @@ body {
 @utility radial-gradient {
     background: radial-gradient(
             circle at center,
-            #434343 0%,
-            #000 50%,
+            #3b2a1f 0%,
+            #000 55%,
             transparent 100%
     );
 }
@@ -72,11 +78,11 @@ body {
         }
 
         p {
-            @apply font-modern-negra text-3xl -mb-2;
+            @apply font-modern-negra text-3xl -mb-2 text-[#f5e6d3];
         }
 
         a {
-            @apply cursor-pointer text-nowrap md:text-base text-sm;
+            @apply cursor-pointer text-nowrap md:text-base text-sm text-[#e6c7a3] hover:text-[#c69c6d];
         }
 
         ul {
@@ -114,18 +120,18 @@ body {
                 }
 
                 p:last-of-type {
-                    @apply 2xl:text-start text-center;
+                    @apply 2xl:text-start text-center text-[#e6c7a3];
                 }
 
                 .view-cocktails {
                     @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
 
                     p {
-                        @apply text-left;
+                        @apply text-left text-[#f5e6d3];
                     }
 
                     a {
-                        @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow;
+                        @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow text-[#c69c6d];
                     }
                 }
             }
@@ -135,7 +141,6 @@ body {
     video {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
-
 
     #coffee {
         @apply relative min-h-dvh w-full overflow-hidden;
@@ -160,7 +165,7 @@ body {
             }
 
             h2 {
-                @apply text-xl font-medium;
+                @apply text-xl font-medium text-[#e6c7a3];
             }
 
             ul {
@@ -174,11 +179,11 @@ body {
                     }
 
                     p {
-                        @apply text-sm;
+                        @apply text-sm text-[#f5e6d3];
                     }
 
                     span {
-                        @apply text-xl font-medium;
+                        @apply text-xl font-medium text-[#e6c7a3];
                     }
                 }
             }
@@ -192,14 +197,14 @@ body {
             @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
 
             h2 {
-                @apply text-5xl md:text-6xl font-modern-negra max-w-lg;
+                @apply text-5xl md:text-6xl font-modern-negra max-w-lg text-[#e6c7a3];
             }
 
             .sub-content {
                 @apply md:col-span-4 space-y-5 flex flex-col justify-between;
 
                 p {
-                    @apply text-lg;
+                    @apply text-lg text-[#f5e6d3];
                 }
 
                 div {
@@ -213,7 +218,7 @@ body {
         }
 
         .badge {
-            @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8;
+            @apply inline-block rounded-full bg-[#c69c6d] text-black px-4 py-2 text-sm font-medium mb-8;
         }
 
         .top-grid {
@@ -245,7 +250,7 @@ body {
         @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
 
         h2 {
-            @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
+            @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#6f4e37] mb-8;
         }
 
         .content {
@@ -258,18 +263,18 @@ body {
 
         .masked-container {
             h2 {
-                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-32;
+                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-[#f5e6d3] mt-32;
             }
 
             div {
                 @apply opacity-0 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
 
                 h3 {
-                    @apply md:text-5xl text-2xl text-center font-serif md:w-full w-80 text-white;
+                    @apply md:text-5xl text-2xl text-center font-serif md:w-full w-80 text-[#e6c7a3];
                 }
 
                 p {
-                    @apply text-lg text-center;
+                    @apply text-lg text-center text-[#f5e6d3];
                 }
             }
         }
@@ -290,7 +295,7 @@ body {
             @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
             button {
-                @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
+                @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra text-[#e6c7a3];
             }
         }
 
@@ -301,7 +306,7 @@ body {
                 @apply flex items-center justify-between w-full absolute;
 
                 button {
-                    @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
+                    @apply text-[#f5e6d3] hover:text-yellow cursor-pointer transition-colors max-w-36;
 
                     span {
                         @apply text-3xl font-modern-negra leading-none hidden md:block;
@@ -333,11 +338,11 @@ body {
                 @apply space-y-5 md:max-w-md text-left;
 
                 h2 {
-                    @apply md:text-5xl text-3xl font-serif;
+                    @apply md:text-5xl text-3xl font-serif text-[#e6c7a3];
                 }
 
                 p {
-                    @apply md:text-lg pe-5;
+                    @apply md:text-lg pe-5 text-[#f5e6d3];
                 }
             }
         }
@@ -358,15 +363,15 @@ body {
             @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
 
             h2 {
-                @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
+                @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5 text-[#e6c7a3];
             }
 
             h3 {
-                @apply uppercase xl:text-base 2xl:text-lg text-base mb-2;
+                @apply uppercase xl:text-base 2xl:text-lg text-base mb-2 text-[#c69c6d];
             }
 
             p {
-                @apply lg:text-2xl 2xl:text-3xl text-sm;
+                @apply lg:text-2xl 2xl:text-3xl text-sm text-[#f5e6d3];
             }
         }
 
